@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accounts Gurukul</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c5c5d3",
+                      "on-primary-container": "#90a8ff",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed": "#dce1ff",
+                      "inverse-surface": "#2f3036",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#90a8ff",
+                      "surface-dim": "#dad9e1",
+                      "primary-fixed": "#dce1ff",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#4059aa",
+                      "secondary-fixed": "#6bff8f",
+                      "error-container": "#ffdad6",
+                      "on-background": "#1a1b21",
+                      "tertiary-container": "#1e3a8a",
+                      "on-surface": "#1a1b21",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f4f3fa",
+                      "secondary-container": "#6bff8f",
+                      "on-secondary-fixed-variant": "#005321",
+                      "outline": "#757682",
+                      "tertiary": "#00236f",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#eeedf4",
+                      "on-primary-fixed": "#00164e",
+                      "on-primary-fixed-variant": "#264191",
+                      "background": "#faf8ff",
+                      "tertiary-fixed-dim": "#b6c4ff",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e3e1e9",
+                      "surface": "#faf8ff",
+                      "surface-variant": "#e3e1e9",
+                      "on-secondary-fixed": "#002109",
+                      "inverse-primary": "#b6c4ff",
+                      "primary-container": "#1e3a8a",
+                      "on-tertiary-fixed-variant": "#264191",
+                      "surface-container-high": "#e9e7ef",
+                      "surface-bright": "#faf8ff",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "on-secondary-container": "#007432",
+                      "secondary": "#006e2f",
+                      "secondary-fixed-dim": "#4ae176",
+                      "on-tertiary-fixed": "#00164e",
+                      "on-surface-variant": "#444651",
+                      "inverse-on-surface": "#f1f0f7",
+                      "primary": "#00236f",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Manrope"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased overflow-x-hidden">
+<!-- TopAppBar from JSON -->
+<header class="bg-[#faf8ff] dark:bg-slate-950 docked full-width top-0 z-50 sticky top-0 w-full flex justify-between items-center px-8 py-4 max-w-full mx-auto md:hidden">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1E3A8A] dark:text-blue-400" data-icon="menu">menu</span>
+<span class="font-['Manrope'] font-extrabold text-[#1E3A8A] dark:text-blue-300 tracking-tighter text-2xl">Accounts Gurukul</span>
+</div>
+<button class="bg-[#1E3A8A] text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-opacity-90 transition-all">Enroll Now</button>
+</header>
+<!-- Top Nav for Web (from JSON structure but adapted for wider screen) -->
+<header class="hidden md:flex bg-[#faf8ff] dark:bg-slate-950 docked full-width top-0 z-50 sticky top-0 w-full justify-between items-center px-8 py-4 max-w-full mx-auto shadow-sm">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1E3A8A] dark:text-blue-400" data-icon="menu">menu</span>
+<span class="font-['Manrope'] font-extrabold text-[#1E3A8A] dark:text-blue-300 tracking-tighter text-2xl">Accounts Gurukul</span>
+</div>
+<button class="bg-[#1E3A8A] text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-opacity-90 transition-all">Enroll Now</button>
+</header>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="px-6 py-12 md:py-24 bg-gradient-to-br from-primary-container to-primary text-on-primary">
+<div class="max-w-4xl mx-auto space-y-6">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase mb-2">Admissions Open 2024</span>
+<h1 class="font-headline font-bold text-4xl md:text-5xl lg:text-6xl tracking-tight leading-tight mb-4">Top Commerce Coaching for 11th, 12th &amp; B.Com in Siliguri</h1>
+<p class="font-body text-on-primary-container text-lg md:text-xl mb-8">5+ Years Experience | Limited Seats | Personal Attention</p>
+<div class="flex flex-col sm:flex-row gap-4 mt-8">
+<button class="bg-secondary text-on-secondary px-6 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-opacity-90 transition-all">
+<span class="material-symbols-outlined" data-icon="chat">chat</span> WhatsApp Now
+                    </button>
+<button class="bg-surface text-primary px-6 py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-surface-high transition-all">
+<span class="material-symbols-outlined" data-icon="call">call</span> Call Now
+                    </button>
+</div>
+</div>
+</section>
+<!-- Trust Section -->
+<section class="py-12 bg-surface-container-low">
+<div class="max-w-5xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center">
+<h3 class="font-headline font-extrabold text-3xl text-primary mb-2">5+</h3>
+<p class="text-on-surface-variant font-medium">Years Experience</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center">
+<h3 class="font-headline font-extrabold text-3xl text-primary mb-2">300+</h3>
+<p class="text-on-surface-variant font-medium">Students Mentored</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl text-center">
+<h3 class="font-headline font-extrabold text-3xl text-primary mb-2">NBU</h3>
+<p class="text-on-surface-variant font-medium">Experienced Faculty</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Courses Section -->
+<section class="py-16 px-6">
+<div class="max-w-5xl mx-auto">
+<h2 class="font-headline font-bold text-3xl md:text-4xl text-primary mb-8 text-center">Our Programs</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/15">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline font-bold text-2xl text-on-surface">Class 11th Commerce</h3>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-semibold">Foundation</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="bg-primary-fixed rounded-full p-1 flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm text-on-primary-fixed" data-icon="check">check</span>
+</span>
+<span class="text-on-surface-variant text-sm">Accountancy &amp; Business Studies</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="bg-primary-fixed rounded-full p-1 flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm text-on-primary-fixed" data-icon="check">check</span>
+</span>
+<span class="text-on-surface-variant text-sm">Regular Mock Tests</span>
+</li>
+</ul>
+<button class="w-full bg-surface-container text-primary font-semibold py-3 rounded-xl flex justify-center items-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="chat">chat</span> Join via WhatsApp
+                        </button>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/15">
+<div class="flex justify-between items-start mb-6">
+<h3 class="font-headline font-bold text-2xl text-on-surface">Class 12th Commerce</h3>
+<span class="bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full text-xs font-semibold">Board Prep</span>
+</div>
+<ul class="space-y-4 mb-8">
+<li class="flex items-start gap-3">
+<span class="bg-primary-fixed rounded-full p-1 flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm text-on-primary-fixed" data-icon="check">check</span>
+</span>
+<span class="text-on-surface-variant text-sm">Comprehensive Board Syllabus</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="bg-primary-fixed rounded-full p-1 flex-shrink-0 mt-1">
+<span class="material-symbols-outlined text-sm text-on-primary-fixed" data-icon="check">check</span>
+</span>
+<span class="text-on-surface-variant text-sm">Past Year Paper Analysis</span>
+</li>
+</ul>
+<button class="w-full bg-surface-container text-primary font-semibold py-3 rounded-xl flex justify-center items-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-secondary" data-icon="chat">chat</span> Join via WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-16 bg-surface-container-low px-6">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="font-headline font-bold text-3xl text-primary mb-4">Why Accounts Gurukul?</h2>
+<p class="text-on-surface-variant">We focus on conceptual clarity and personal attention.</p>
+</div>
+<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="group">group</span>
+<div>
+<h4 class="font-headline font-semibold text-lg mb-2">Small Batches</h4>
+<p class="text-sm text-on-surface-variant">Limited students per batch ensuring individual focus and doubt clearing.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="menu_book">menu_book</span>
+<div>
+<h4 class="font-headline font-semibold text-lg mb-2">Expert Materials</h4>
+<p class="text-sm text-on-surface-variant">Curated study materials aligned with the latest syllabus patterns.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar from JSON (Mobile Only) -->
+<nav class="bg-[#ffffff]/80 dark:bg-slate-900/80 backdrop-blur-xl fixed bottom-0 w-full rounded-t-3xl border-t border-[#c5c5d3]/15 shadow-[0px_-10px_30px_rgba(0,35,111,0.04)] fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 md:hidden">
+<a class="flex flex-col items-center justify-center bg-[#DCE1FF] dark:bg-blue-900/40 text-[#1E3A8A] rounded-2xl px-5 py-2 hover:opacity-80 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home" data-weight="fill">home</span>
+<span class="font-['Inter'] text-[10px] font-semibold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#444651] dark:text-slate-400 px-5 py-2 hover:opacity-80 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="school">school</span>
+<span class="font-['Inter'] text-[10px] font-semibold">Courses</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#444651] dark:text-slate-400 px-5 py-2 hover:opacity-80 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1 text-[#006e2f]" data-icon="chat">chat</span>
+<span class="font-['Inter'] text-[10px] font-semibold">WhatsApp</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#444651] dark:text-slate-400 px-5 py-2 hover:opacity-80 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-['Inter'] text-[10px] font-semibold">Profile</span>
+</a>
+</nav>
+</body></html>

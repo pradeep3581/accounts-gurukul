@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Accounts Gurukul - Scholarly Editorial Commerce Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#c5c5d3",
+                        "on-primary-container": "#90a8ff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#dce1ff",
+                        "inverse-surface": "#2f3036",
+                        "on-error": "#ffffff",
+                        "on-tertiary-container": "#90a8ff",
+                        "surface-dim": "#dad9e1",
+                        "primary-fixed": "#dce1ff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#4059aa",
+                        "secondary-fixed": "#6bff8f",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1a1b21",
+                        "tertiary-container": "#1e3a8a",
+                        "on-surface": "#1a1b21",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f4f3fa",
+                        "secondary-container": "#6bff8f",
+                        "on-secondary-fixed-variant": "#005321",
+                        "outline": "#757682",
+                        "tertiary": "#00236f",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eeedf4",
+                        "on-primary-fixed": "#00164e",
+                        "on-primary-fixed-variant": "#264191",
+                        "background": "#faf8ff",
+                        "tertiary-fixed-dim": "#b6c4ff",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e3e1e9",
+                        "surface": "#faf8ff",
+                        "surface-variant": "#e3e1e9",
+                        "on-secondary-fixed": "#002109",
+                        "inverse-primary": "#b6c4ff",
+                        "primary-container": "#1e3a8a",
+                        "on-tertiary-fixed-variant": "#264191",
+                        "surface-container-high": "#e9e7ef",
+                        "surface-bright": "#faf8ff",
+                        "primary-fixed-dim": "#b6c4ff",
+                        "on-secondary-container": "#007432",
+                        "secondary": "#006e2f",
+                        "secondary-fixed-dim": "#4ae176",
+                        "on-tertiary-fixed": "#00164e",
+                        "on-surface-variant": "#444651",
+                        "inverse-on-surface": "#f1f0f7",
+                        "primary": "#00236f",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(135deg, #00236f, #1e3a8a);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#faf8ff] dark:bg-slate-950 font-['Manrope'] font-bold tracking-tight text-2xl docked full-width top-0 z-50 bg-[#f4f3fa] dark:bg-slate-900 flat no shadows hover:text-[#1E3A8A] transition-colors duration-300 scale-95 duration-200 transition-transform sticky top-0 w-full flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#1E3A8A] dark:text-blue-400" data-icon="menu">menu</span>
+<span class="font-['Manrope'] font-extrabold text-[#1E3A8A] dark:text-blue-300 tracking-tighter text-2xl">Accounts Gurukul</span>
+</div>
+<nav class="hidden md:flex gap-8">
+<a class="text-[#1E3A8A] font-bold border-b-2 border-[#1E3A8A]" href="#">Home</a>
+<a class="text-[#444651] dark:text-slate-400" href="#">Courses</a>
+<a class="text-[#444651] dark:text-slate-400" href="#">About</a>
+<a class="text-[#444651] dark:text-slate-400" href="#">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-xl text-sm font-label flex items-center gap-2 hover:bg-primary transition-colors">
+            Enroll Now
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center bg-surface overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-br from-surface to-surface-container-high opacity-80"></div>
+</div>
+<div class="container mx-auto px-8 md:px-16 z-10 relative flex flex-col md:flex-row items-center gap-16 pt-20 pb-24">
+<div class="md:w-1/2 flex flex-col items-start space-y-8">
+<div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed-variant px-4 py-2 rounded-full text-sm font-label font-medium">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>5+ Years Experience | Limited Seats</span>
+</div>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl leading-tight tracking-tighter text-on-surface">
+                        Top Commerce Coaching for <span class="text-gradient">11th, 12th &amp; B.Com</span> in Siliguri
+                    </h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Elevate your academic journey with personalized attention and scholarly expertise. Preparing students for absolute commerce mastery.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto mt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-xl font-label font-bold flex items-center justify-center gap-3 hover:bg-[#005321] transition-all shadow-[0px_20px_40px_rgba(0,110,47,0.15)]">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+                            WhatsApp Now
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-label font-bold flex items-center justify-center gap-3 hover:bg-surface-dim transition-all">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+                            Call Now
+                        </button>
+</div>
+</div>
+<div class="md:w-1/2 w-full relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden relative shadow-[0px_40px_80px_rgba(0,35,111,0.08)] bg-surface-container-lowest">
+<img alt="Students in a modern, well-lit classroom engaged in discussion, representing quality education." class="object-cover w-full h-full object-center" data-alt="Group of diverse university students studying together in a bright, modern library with large windows, scholarly atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQn9Q1l4dILgW6rc0jEQlSvSX8zxb4rvu3RYVQpx4oAoR33NP97NttpMJBPJMcjcCaHTwR3YAtFXd-4LdjHVebQ_0gExqjvh-s1dAxlOa1eNAOJKGNaMGub6XeM2ogg6JwSV1tGAXA4_IEsQwznnPHMgM1oycXcTvUuXYR-iMnyc62Ha4MaIQkGIVYUBjvFr69AMmIC_Y_9pThJSOlSJuGe2XgDSRrzYIzXyIkbfhmEkGR-prSKXPQgl1vNhym6TpEua7zPpJyEUjO"/>
+</div>
+<!-- Floating Stat -->
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest/90 backdrop-blur-xl p-6 rounded-2xl shadow-[0px_20px_40px_rgba(0,35,111,0.06)] border border-outline-variant/15 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl">school</span>
+</div>
+<div>
+<p class="font-headline font-bold text-2xl text-on-surface">300+</p>
+<p class="font-label text-sm text-on-surface-variant">Successful Students</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust & Stats Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8 md:px-16">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+<div class="flex flex-col items-center text-center px-8">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4" data-weight="fill">workspace_premium</span>
+<h3 class="font-headline font-extrabold text-4xl mb-2 text-on-surface">5+</h3>
+<p class="font-label text-on-surface-variant font-medium tracking-wide uppercase">Years of Excellence</p>
+</div>
+<div class="flex flex-col items-center text-center px-8 pt-12 md:pt-0">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4" data-weight="fill">group</span>
+<h3 class="font-headline font-extrabold text-4xl mb-2 text-on-surface">300+</h3>
+<p class="font-label text-on-surface-variant font-medium tracking-wide uppercase">Students Mentored</p>
+</div>
+<div class="flex flex-col items-center text-center px-8 pt-12 md:pt-0">
+<span class="material-symbols-outlined text-4xl text-primary-container mb-4" data-weight="fill">local_library</span>
+<h3 class="font-headline font-extrabold text-4xl mb-2 text-on-surface">NBU</h3>
+<p class="font-label text-on-surface-variant font-medium tracking-wide uppercase">Experienced Faculty</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Courses Section -->
+<section class="py-32 bg-surface">
+<div class="container mx-auto px-8 md:px-16">
+<div class="flex flex-col items-center text-center mb-20 max-w-3xl mx-auto">
+<span class="text-primary-container font-label font-bold tracking-widest uppercase mb-4 text-sm">Our Curriculum</span>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface mb-6">Academic Programs</h2>
+<p class="font-body text-on-surface-variant text-lg">Comprehensive coaching designed to build a strong foundation and ensure conceptual clarity for future commerce professionals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+<!-- Course Card 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 relative group">
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">looks_one</span>
+</div>
+<div class="mb-4">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed-variant text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Foundation</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Class 11th</h3>
+</div>
+<p class="font-body text-on-surface-variant flex-grow mb-8 text-sm leading-relaxed">
+                            Start your commerce journey right. Focus on core accounting principles and business studies fundamentals.
+                        </p>
+<button class="w-full bg-surface-container-highest text-primary-container font-label font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                            Join via WhatsApp
+                        </button>
+</div>
+<!-- Course Card 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 relative group">
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">looks_two</span>
+</div>
+<div class="mb-4">
+<span class="inline-block bg-secondary-fixed text-on-secondary-fixed-variant text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Board Exams</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">Class 12th</h3>
+</div>
+<p class="font-body text-on-surface-variant flex-grow mb-8 text-sm leading-relaxed">
+                            Intensive preparation for board exams with exhaustive practice papers and strategic revision plans.
+                        </p>
+<button class="w-full bg-surface-container-highest text-primary-container font-label font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                            Join via WhatsApp
+                        </button>
+</div>
+<!-- Course Card 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 relative group">
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">account_balance</span>
+</div>
+<div class="mb-4">
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Undergraduate</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">B.Com</h3>
+</div>
+<p class="font-body text-on-surface-variant flex-grow mb-8 text-sm leading-relaxed">
+                            Advanced conceptual learning aligned with university syllabus, focusing on practical application.
+                        </p>
+<button class="w-full bg-surface-container-highest text-primary-container font-label font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                            Join via WhatsApp
+                        </button>
+</div>
+<!-- Course Card 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-8 flex flex-col h-full hover:-translate-y-2 transition-transform duration-300 relative group">
+<div class="absolute -top-4 -right-4 bg-error text-on-error text-xs font-bold px-3 py-1 rounded-full transform rotate-12 shadow-lg z-10">Popular</div>
+<div class="w-16 h-16 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">trending_up</span>
+</div>
+<div class="mb-4">
+<span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Professional</span>
+<h3 class="font-headline font-bold text-2xl text-on-surface">CA Foundation</h3>
+</div>
+<p class="font-body text-on-surface-variant flex-grow mb-8 text-sm leading-relaxed">
+                            Rigorous training for the first step of Chartered Accountancy, building analytical and problem-solving skills.
+                        </p>
+<button class="w-full bg-surface-container-highest text-primary-container font-label font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 group-hover:bg-primary-container group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-xl" data-icon="chat">chat</span>
+                            Join via WhatsApp
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="container mx-auto px-8 md:px-16">
+<div class="flex flex-col items-center text-center mb-16 max-w-3xl mx-auto">
+<span class="text-primary-container font-label font-bold tracking-widest uppercase mb-4 text-sm">Student Success</span>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface mb-6">What Our Achievers Say</h2>
+<p class="font-body text-on-surface-variant text-lg">Hear from our top performers who have achieved excellence in their board and university exams.</p>
+</div>
+<div class="relative max-w-5xl mx-auto">
+<div class="overflow-hidden pb-8">
+<div class="flex transition-transform duration-500 ease-in-out gap-6">
+<!-- Card 1 -->
+<div class="w-full md:w-[calc(50%-12px)] flex-shrink-0">
+<div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-[0px_20px_40px_rgba(0,35,111,0.06)] h-full flex flex-col relative border border-outline-variant/20">
+<span class="material-symbols-outlined absolute top-8 right-8 text-6xl text-primary-fixed opacity-30 font-serif">format_quote</span>
+<div class="flex items-center gap-6 mb-6 relative z-10">
+<div class="w-20 h-20 rounded-full overflow-hidden border-4 border-primary-container/10">
+<img alt="Priya Sharma" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCijjCuKtHB9ly0dOnKzeAOZwFK60Q1R9zaimdlwHiXpznuwkKQAU7cLZr4dLmuu-LJ6W25IurW5Fr_GOVUm4opDwpOPbAz-KKqOeWMzcenPGwP3OnL5VGRtH7mAZGBTj2JB9drmiI0b_zmN742W2krrTz9kYZlkrJcSbpdUi_j80a9ACoQVvmtBHy1f1ishLVx-4TUUnZagc4iYLPIs7cutxoRVq7XknGfkNzVcDgdRqRpuDvJeT7bS0KdqOzQzDbHoEMFsuO8eCh4"/>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">Priya Sharma</h3>
+<div class="inline-block bg-primary-container text-on-primary px-3 py-1 rounded-md font-bold text-xs uppercase tracking-wider">95% in Accountancy</div>
+</div>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed flex-grow">"The conceptual clarity I got here was unmatched. The regular tests and personalized feedback helped me identify my weak areas and improve significantly. Highly recommended!"</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="w-full md:w-[calc(50%-12px)] flex-shrink-0 hidden md:block">
+<div class="bg-surface-container-lowest rounded-3xl p-8 md:p-10 shadow-[0px_20px_40px_rgba(0,35,111,0.06)] h-full flex flex-col relative border border-outline-variant/20">
+<span class="material-symbols-outlined absolute top-8 right-8 text-6xl text-primary-fixed opacity-30 font-serif">format_quote</span>
+<div class="flex items-center gap-6 mb-6 relative z-10">
+<div class="w-20 h-20 rounded-full overflow-hidden border-4 border-primary-container/10">
+<img alt="Rahul Das" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-ucqgo2r7PS-1Zriy2AHRZyIOr_p2aGqJtq2H7KaAtu1omb_T-a_OgtYihlZVsu_pnnG-YrWWAEtIvBio2huvdVnQH4dSQVykLr8AvPW-gnhT1XvH5cfZsBHxDx6oygEQ1Bjz3F4WaS6GrCjMNvBtmLck3hsbH6J9sf7-zkh8t0B_avTd3Wu_3X-pXj-mJ4XQ4zQG6kyczONwA8skEYLtLn9FzouVm-dxNznIFJeDy2rf_mOFt-56bvN0DAANmyHxWKc8lfJkpAqB"/>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-on-surface mb-1">Rahul Das</h3>
+<div class="inline-block bg-primary-container text-on-primary px-3 py-1 rounded-md font-bold text-xs uppercase tracking-wider">92% in Class 12 Boards</div>
+</div>
+</div>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed flex-grow">"Accounts Gurukul completely changed my approach to studying. The faculty's dedication and the comprehensive study materials made tackling complex problems so much easier."</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Arrows -->
+<button class="absolute top-1/2 -left-4 md:-left-6 -translate-y-1/2 w-12 h-12 rounded-full bg-surface-container-lowest border border-outline-variant/20 shadow-[0px_8px_16px_rgba(0,35,111,0.1)] flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-colors z-10">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<button class="absolute top-1/2 -right-4 md:-right-6 -translate-y-1/2 w-12 h-12 rounded-full bg-surface-container-lowest border border-outline-variant/20 shadow-[0px_8px_16px_rgba(0,35,111,0.1)] flex items-center justify-center text-primary-container hover:bg-primary-container hover:text-on-primary transition-colors z-10">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<!-- Pagination Dots -->
+<div class="flex justify-center gap-3 mt-8">
+<button class="w-8 h-2 rounded-full bg-primary-container transition-all"></button>
+<button class="w-2 h-2 rounded-full bg-outline-variant/50 hover:bg-primary-container/50 transition-all"></button>
+<button class="w-2 h-2 rounded-full bg-outline-variant/50 hover:bg-primary-container/50 transition-all"></button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1E3A8A] dark:bg-slate-950 text-white font-['Inter'] text-sm tracking-wide font-['Manrope'] text-xl font-black text-white w-full pt-16 pb-8 border-t border-white/10 flat text-white font-bold text-white/70 hover:text-white transition-colors hover:underline underline-offset-4 transition-all w-full px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-['Manrope'] text-2xl font-black text-white mb-2">Accounts Gurukul</div>
+<div class="text-white/70 text-sm max-w-xs text-center md:text-left">
+                The Scholarly Editorial in Commerce Education. Shaping future professionals in Siliguri.
+            </div>
+</div>
+<div class="flex gap-6">
+<a class="text-white/70 hover:text-white hover:underline underline-offset-4 transition-colors" href="#">Curriculum</a>
+<a class="text-white/70 hover:text-white hover:underline underline-offset-4 transition-colors" href="#">Faculty</a>
+<a class="text-white/70 hover:text-white hover:underline underline-offset-4 transition-colors" href="#">Alumni</a>
+<a class="text-white/70 hover:text-white hover:underline underline-offset-4 transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="text-white/50 text-xs">
+            © 2024 Accounts Gurukul. The Scholarly Editorial in Commerce Education.
+        </div>
+</footer>
+</body></html>

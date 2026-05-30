@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery Management - Accounts Gurukul</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "outline-variant": "#c5c5d3",
+                      "on-primary-container": "#90a8ff",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed": "#dce1ff",
+                      "inverse-surface": "#2f3036",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#90a8ff",
+                      "surface-dim": "#dad9e1",
+                      "primary-fixed": "#dce1ff",
+                      "on-secondary": "#ffffff",
+                      "surface-tint": "#4059aa",
+                      "secondary-fixed": "#6bff8f",
+                      "error-container": "#ffdad6",
+                      "on-background": "#1a1b21",
+                      "tertiary-container": "#1e3a8a",
+                      "on-surface": "#1a1b21",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container-low": "#f4f3fa",
+                      "secondary-container": "#6bff8f",
+                      "on-secondary-fixed-variant": "#005321",
+                      "outline": "#757682",
+                      "tertiary": "#00236f",
+                      "on-primary": "#ffffff",
+                      "surface-container": "#eeedf4",
+                      "on-primary-fixed": "#00164e",
+                      "on-primary-fixed-variant": "#264191",
+                      "background": "#faf8ff",
+                      "tertiary-fixed-dim": "#b6c4ff",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e3e1e9",
+                      "surface": "#faf8ff",
+                      "surface-variant": "#e3e1e9",
+                      "on-secondary-fixed": "#002109",
+                      "inverse-primary": "#b6c4ff",
+                      "primary-container": "#1e3a8a",
+                      "on-tertiary-fixed-variant": "#264191",
+                      "surface-container-high": "#e9e7ef",
+                      "surface-bright": "#faf8ff",
+                      "primary-fixed-dim": "#b6c4ff",
+                      "on-secondary-container": "#007432",
+                      "secondary": "#006e2f",
+                      "secondary-fixed-dim": "#4ae176",
+                      "on-tertiary-fixed": "#00164e",
+                      "on-surface-variant": "#444651",
+                      "inverse-on-surface": "#f1f0f7",
+                      "primary": "#00236f",
+                      "error": "#ba1a1a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Manrope"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf8ff;
+            color: #1a1b21;
+        }
+        h1, h2, h3, h4, h5, h6, .font-headline {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface flex min-h-screen">
+<!-- Navigation Drawer (SideNav) -->
+<nav class="hidden md:flex flex-col fixed left-0 top-0 h-screen w-72 bg-surface-container-low text-primary-container rounded-r-xl shadow-xl shadow-blue-900/5 z-40">
+<div class="p-8">
+<h1 class="font-headline font-bold text-primary-container mb-8 text-2xl tracking-tighter">Accounts Gurukul</h1>
+<div class="flex items-center gap-4 mb-8">
+<img alt="Admin User" class="w-12 h-12 rounded-full border-2 border-surface-container-lowest shadow-sm" data-alt="professional headshot of an academic administrator in a warm lit office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-T8d8Ur8sJLs93BpThX1bARGYmD5kOZ59Q8HOlvByBNwtSuX5lK9R4KsSRMAfSD1KGnde-R3prdL35cWp9jrBtHXUftrc56RYOQBiCDgvyT_CGScFzE7X912vd_m9KpBMrczYH3JFOwQUlfm7LjqXrE3_tqHmkWsueHsC-HTY_RphwAJd7-ogRaFSgSm930OEK9kBfKJxRYoK-N7HkID99CeycFeX1-LBpXzlxqNVAIIYD9J9N02Qg98Hgjz8bhvZ5BB1qZX0PS2u"/>
+<div>
+<div class="font-headline font-semibold text-sm text-on-surface">Academic Registrar</div>
+<div class="font-body text-xs text-on-surface-variant">Admin Control Panel</div>
+</div>
+</div>
+<ul class="flex flex-col gap-2 font-body text-sm font-medium">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-250 ease-in-out mx-2 my-1" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                        Dashboard
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-250 ease-in-out mx-2 my-1" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+                        Course Management
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-250 ease-in-out mx-2 my-1" href="#">
+<span class="material-symbols-outlined">group</span>
+                        Student Records
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-250 ease-in-out mx-2 my-1" href="#">
+<span class="material-symbols-outlined">payments</span>
+                        Fee Analytics
+                    </a>
+</li>
+<li>
+<!-- Assuming Gallery Management falls under Settings/Admin for this context, but creating a specific active state for it if it were a top-level item -->
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container text-on-primary mx-2 my-1 transition-all duration-250 ease-in-out" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">collections</span>
+                        Gallery Management
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-250 ease-in-out mx-2 my-1" href="#">
+<span class="material-symbols-outlined">settings</span>
+                        Settings
+                    </a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Top App Bar (Mobile Only for this admin context, or minimal header for desktop) -->
+<header class="md:hidden sticky top-0 w-full flex justify-between items-center px-6 py-4 bg-surface z-50">
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<h1 class="font-headline font-extrabold text-primary-container tracking-tighter text-xl">Accounts Gurukul</h1>
+</div>
+<img alt="Admin" class="w-8 h-8 rounded-full" data-alt="professional headshot of an academic administrator in a warm lit office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxNOxJ05y28OxPHdiYLifqhMjzqHLPUb8FXmlecCqg2zgsoTOl9ivlOuHqa1Uuus2iL1LrhQOc5Vu2IIetvJcdrG-7VTVozf-dEsogGlaFDu1ooqZu70ynFTHktnfdvAnUrvl1gzlKbMGvKh-awWuV0dqmdQgwXfnwa4CQlI2MYgjUe57nHCpuLZuyMIH2jiztnYaUMD9rqjqcalqlJ-JyX4NTC1b807hxz-JZmRrb8Lc3vu4wOxM6mJM-gYWYkFtwbAZV_q6Wgoj5"/>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 md:ml-72 p-6 md:p-12 max-w-7xl mx-auto w-full">
+<!-- Page Header -->
+<div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h2 class="font-headline text-[2.5rem] leading-tight font-bold text-on-surface tracking-tight mb-2">Gallery Management</h2>
+<p class="font-body text-base text-on-surface-variant">Curate and manage the visual assets for the Accounts Gurukul platform.</p>
+</div>
+<!-- Quick Actions -->
+<div class="flex gap-4">
+<button class="flex items-center gap-2 bg-surface-container-lowest text-on-surface px-5 py-3 rounded-xl hover:bg-surface-container-low transition-colors shadow-sm border border-outline-variant/15">
+<span class="material-symbols-outlined text-on-surface-variant">filter_list</span>
+<span class="font-body font-medium text-sm">Filter</span>
+</button>
+<button class="flex items-center gap-2 bg-primary-container text-on-primary px-6 py-3 rounded-xl hover:opacity-90 transition-opacity shadow-[0px_20px_40px_rgba(0,35,111,0.06)]">
+<span class="material-symbols-outlined">add_photo_alternate</span>
+<span class="font-body font-medium text-sm">Upload New</span>
+</button>
+</div>
+</div>
+<!-- Upload Section (Prominent) -->
+<section class="mb-12">
+<div class="bg-surface-container-lowest rounded-[1.5rem] p-8 md:p-12 border border-outline-variant/15 flex flex-col md:flex-row gap-12 items-center">
+<!-- Drag & Drop Zone -->
+<div class="flex-1 w-full border-2 border-dashed border-outline-variant/30 rounded-xl bg-surface-container-low p-10 flex flex-col items-center justify-center text-center hover:bg-surface-container-highest/50 transition-colors cursor-pointer group relative overflow-hidden">
+<div class="w-16 h-16 bg-primary-fixed rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-3xl text-primary-container">cloud_upload</span>
+</div>
+<h3 class="font-headline font-bold text-lg text-on-surface mb-2">Drag &amp; Drop Images Here</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6">Supports JPG, PNG, WEBP (Max 5MB per file)</p>
+<button class="bg-surface-container-lowest text-on-surface px-6 py-2.5 rounded-lg border border-outline-variant/20 font-body text-sm font-medium hover:bg-surface-container-highest transition-colors">
+                        Select from Device
+                    </button>
+<!-- Input placeholder -->
+<input accept="image/*" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" multiple="" type="file"/>
+</div>
+<!-- Upload Queue / Preview (Simulated Active State) -->
+<div class="w-full md:w-80 flex flex-col gap-4">
+<h4 class="font-headline font-semibold text-base text-on-surface mb-2">Recent Uploads</h4>
+<!-- Uploading Item -->
+<div class="flex items-center gap-4 p-3 bg-surface rounded-xl border border-outline-variant/15">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden relative">
+<img alt="Preview" class="w-full h-full object-cover opacity-50" data-alt="students studying together in a modern bright library setting with books and laptops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwQoKpSX-S2wh3evqA494GucOut5ElStfZ3LMy-8udOaXYL0WUxDPvFZG7TMevQELkY7Y0i0Rcfv5SVPjAcS4HLsUUXHYG3D1xB7MN9EKJi04yd7lvIJ-jSrP5u7a6yvvUt77ZwlrHDucSbw7ASAT8M2rAANDGn8TUaWZ9Gz2Jkxi4YWkxUPOKAyconO-XI6kB6mnwV6NSogDxEKpQmAakby3La1is5Z4cGQYlTVGsXSmgRwUGUUNtxbLJMizIhdCbDoLl-cUJnbXp"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined animate-spin text-white drop-shadow-md">sync</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body text-xs font-medium text-on-surface truncate w-32">campus_tour_01.jpg</span>
+<span class="font-body text-[10px] text-on-surface-variant">45%</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</div>
+<!-- Successful Upload -->
+<div class="flex items-center gap-4 p-3 bg-surface rounded-xl border border-outline-variant/15">
+<div class="w-12 h-12 rounded-lg bg-surface-variant overflow-hidden">
+<img alt="Preview" class="w-full h-full object-cover" data-alt="empty modern classroom with rows of desks and a whiteboard at the front" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkZ3tnrEJzG55kf6hk1Bb0EOiVySYtDfEuJLShD4GUwt3vpaqemivtt8E1MeKnyVgqeUf1DMgJTA_aay4LOzh2MDIIFBALP2e2XGVy7ZJElLyaSo3QeRbXZEm5rKzGLSlLkM1ropj7F0cIZdM1cXbpFZ35zQuqreqXHg1iZixGKtnyQ_dapWwjrFzolMVX5nSBFf4zKHeUdEIJa_RO4x9YBMP--EGKJAn8LTwPptEuxTqc5nszp-e1UOfwURCQ8dyqQFKlnTJedeKq"/>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<span class="font-body text-xs font-medium text-on-surface truncate w-32">classroom_empty.jpg</span>
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+</div>
+<div class="font-body text-[10px] text-on-surface-variant">1.2 MB • Uploaded just now</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Existing Gallery Grid -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-headline font-bold text-xl text-on-surface">Image Library</h3>
+<div class="text-sm font-body text-on-surface-variant">Showing 64 assets</div>
+</div>
+<!-- Bento-style Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Grid Item 1 -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="students studying together in a modern bright library setting with books and laptops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvH0jju5-dv7h_iBrAdLR1Hrf7BpSY153RGvWkiDWm8B2088b3MW3bR3DEtBfqOCmHZHXG21wFWL0USet_ZziqJ5H6z6k5L3c2OPD0HtM8n4zwiMcGtxk_MW4gFJqhP_wAPOLS3LM_RiSPYAl0Rls0390lzxWeYrgFUED4QO6drvZNABcGNc4QsDmjsQ0RUstEWGOF5QJlWotFItQbFAzvLXfG85dNZSl4MD3U2fw2Jm07CrOnXo99aEc4fY48Dx0iL82rcwCaTbUW"/>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">library_study_group.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Campus Life • 2.4 MB</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 2 (Featured/Larger in a real bento, but keeping square for consistency here unless specified) -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="empty modern classroom with rows of desks and a whiteboard at the front" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD55OK-1tFoN0It3QdnhwdOxrgzdGhoFncdgysmWqLOJ3oKFtsDO18VmYI2JFRii-_ptL5KjMYKcHSU6Q1oRwJzpRjA2hnWfRiyF8KIi7NxSL8Hed4FCPdCBUgT6a1fp-xgrk56afP6mEGzU4U4aV3Sdcoepe75DEMSOvzx7lZ1CbY_MUcaeJPXFSOae6StP7shW_8Tac-K3m4ne7Sw3BTDVBrqpNSMkipAPsg0iBtVKUCq45zHJlz7_sfwRVYP_cEVdjSm96Pc1LvY"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">main_classroom_A.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Facilities • 1.8 MB</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 3 -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="graduation cap resting on top of a stack of old leather bound books on a wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ide6JBgzWokNTPmNbqvaJr1fmGSdm9gZcdupuS1m5VDop6Ux78dEdcVl2_YP2qOWZ8jlQuJ0hh0cikNuMSWsCkdSKo4_fJq4Cp-Z-eHdGSFNxpc2GtXacyxqInNy29K4RgIBjLmnPf2haa0e-D1vDDh8HVmzK-0iBfnKnKWMAeKhonTzpxJqeg3-YBx2DlJH0mcieclH1luvON04C3u-oHGsGUIhTBG4yCYj4kR5ZLuhSBjgCsn2tlwdBo7UIQFgxhskJ5haccdP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">grad_cap_books.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Marketing • 3.1 MB</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 4 -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="close up of a person writing in a notebook with a fountain pen next to a cup of coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpPpsIYlinqVM0q9Ect55lVddrDPGFEb7Q5xNetBkm32sD6LTKH7ulDOv5hyy6yNod5WR8hN76U-FmMsHbDENtSRDtmyPlKJVnYPQvafGVM6jOrB8-uagi8t7XRS5Vx4OhgovTqJpv7mfrrZRW1VLnngJ8p_I5pHLn-06CRKjaJuntGUlFlA74SD0cQ1ws5fEN-GoEywvXhi739KhorBxwlSQyCVCrIQTWFBgh0G-WVfZL1GWY8_0-1epxW2x1G27j6tijDhmUJ_00"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">student_writing.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Academics • 2.2 MB</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 5 -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="group of university students collaborating around a table looking at a laptop and smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiULtxbl7LOyO4XgJco1ZkA08EXhueYl-psqM1txjmAihPDeEOCiQ-kBjrfo_1xueRQSdX-gox159NB-bbqrwL9JZTnkI7ZkVf2o7jQTW9hnv6Qbm14j7ieJAxIKYHvhdhQ4RDoQ4AwV-SkQPY_XYGlMSH54muq-HB1yt3a9h9nI9JENbwp5o95jjApkPAhZI3DjA8yLix6oFi2HlGK-6-JJIjmRk6wnTa9z7DM-_vT3ie1QMRh9Wy7YdR5-mb9z8sfVZn9Q4EsK5S"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">group_project_happy.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Student Life • 4.5 MB</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 6 -->
+<div class="group relative rounded-[1rem] overflow-hidden bg-surface-container-lowest aspect-square border border-outline-variant/10 shadow-sm hover:shadow-md transition-shadow">
+<img alt="Gallery Image" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="professional modern office building interior with glass walls and bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVu4oD-mCZHYfAHixDeG3LfQ6nY6Pf9XH61k1jfemIkbrvpti5SobTrXkXvrexocSL-IzBsMnWxvGkOSn28F8Nz-xu-fsPu0OUq3HDMdwlCgB0BfiWwQbpguHAdHzqvOMsrY5yMwWuR4as2e32H4_LR-3XfVN9H9MWff1fL7LfqRiEUpolh9ZOl6szuUVa_QBPKKI0SbkqOyjvZg7eNNOBsssH_1bt47UzDN5f0GVlLDUWcuxDiO_ocF9AcOb0djwgx0OrMGU5Izic"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-between p-4">
+<div class="flex justify-end">
+<button class="bg-surface-container-lowest/90 backdrop-blur-sm text-error p-2 rounded-lg hover:bg-error-container hover:text-on-error-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">delete</span>
+</button>
+</div>
+<div>
+<p class="text-white font-body text-xs font-medium truncate">admin_office_exterior.jpg</p>
+<p class="text-white/70 font-body text-[10px]">Facilities • 3.8 MB</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Load More / Pagination placeholder -->
+<div class="mt-12 flex justify-center">
+<button class="bg-surface-container-low text-on-surface-variant px-6 py-2.5 rounded-full border border-outline-variant/20 font-body text-sm font-medium hover:bg-surface-container-highest transition-colors">
+                    Load More Assets
+                </button>
+</div>
+</section>
+</main>
+</body></html>
